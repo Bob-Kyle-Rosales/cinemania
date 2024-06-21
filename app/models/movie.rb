@@ -1,4 +1,7 @@
 class Movie < ApplicationRecord
+  has_many :favorites, dependent: :destroy
+  has_many :favorited_by_users, through: :favorites, source: :user
+
   validates :title, presence: true, length: { maximum: 50 }
   validates :duration, presence: true,
                        format:   { with: /\A\d+:\d+\z/, message: "Duration must be in 'hh:mm' format" }
