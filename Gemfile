@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-ruby "3.3.1"
+ruby "3.3.2"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.1.3", ">= 7.1.3.4"
@@ -28,6 +28,13 @@ gem "jbuilder"
 
 gem 'rubocop'
 gem 'rubocop-rails'
+
+gem 'apipie-rails'
+gem 'active_model_serializers'
+gem 'pagy'
+
+gem 'bcrypt'
+gem 'jwt'
 
 # Use Redis adapter to run Action Cable in production
 # gem "redis", ">= 4.0.1"
